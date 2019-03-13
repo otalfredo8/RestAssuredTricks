@@ -48,3 +48,19 @@ public class PathParamExample {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
