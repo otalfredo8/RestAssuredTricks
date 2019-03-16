@@ -20,9 +20,21 @@ public class AccessTokenExample {
         Response response = given().log().all().
                 param("email", "teacherva5@gmail.com").
                 param("password", "maxpayne").
-                get("sign");
+                get("/sign");
         response.then().log().all().
                 assertThat().statusCode(200);
+        // used to parse through json response easily
+
+        String accessToken = response.jsonPath().get("accessToken");
+
+        System.out.println(accessToken);
+
+        // trying to get the my campus
+        // we are passing our token as a part of the request header
+        RestAssured.given().header("Authorization", accessToken).
+                get("/api/campuses").then().log().all().
+                assertThat().statusCode(200);
+
     }
 }
 
