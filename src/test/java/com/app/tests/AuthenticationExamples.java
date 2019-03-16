@@ -33,6 +33,7 @@ public class AuthenticationExamples {
                 auth().basic("admin", "admin").
                 when().get("https://the-internet.herokuapp.com/basic_auth").
                 then().assertThat().statusCode(200);
+        //
     }
 
     @Test
@@ -41,6 +42,18 @@ public class AuthenticationExamples {
         // this method is to show request which returns xml body
         RestAssured.get("http://parabank.parasoft.com/parabank/services/bank/customers/12212/").
                 then().log().all().assertThat().statusCode(200);
+    }
+
+
+    @Test
+    public void basicPreemptiveAuthentication(){
+        // auth --> provides different types of authentication
+        // based --> authentication using username and password
+        RestAssured.given().
+                auth().preemptive().basic("admin", "admin").
+                when().get("https://the-internet.herokuapp.com/basic_auth").
+                then().assertThat().statusCode(200);
+        //
     }
 
 
