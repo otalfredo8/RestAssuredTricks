@@ -3,6 +3,7 @@ package com.app.tests;
 import com.github.javafaker.Faker;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -14,6 +15,9 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
 
 public class PostRequestExample {
+
+    Logger log = Logger.getLogger(PostRequestExample.class);
+
 
     @BeforeClass
     public static void setUp() {
