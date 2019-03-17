@@ -7,6 +7,10 @@ import static io.restassured.RestAssured.given;
 
 public class BookITRestUtility {
 
+    public static void main(String[] args) {
+        System.out.println(getTeacherToken());
+    }
+
     public static String getTeacherToken() {
         RestAssured.baseURI = "https://cybertek-reservation-api-qa.herokuapp.com";
 

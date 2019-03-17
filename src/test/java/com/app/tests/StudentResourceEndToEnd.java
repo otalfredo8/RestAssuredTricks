@@ -1,8 +1,13 @@
 package com.app.tests;
 
 import com.github.javafaker.Faker;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.Logger;
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.Map;
 
@@ -15,7 +20,7 @@ public class StudentResourceEndToEnd {
     Logger log = Logger.getLogger(StudentResourceEndToEnd.class);
 
     @Test
-    public void postStudent(){
+    public void postStudent() throws InterruptedException {
         // Create test data
         Faker faker = new Faker();
         String firstName = faker.name().firstName();
@@ -75,6 +80,17 @@ public class StudentResourceEndToEnd {
                 body("firstName", is(firstName)).
                 body("lastName", is(lastName)).
                 body("role", is(role));
+
+        // VERIFY USING UI
+
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://cybertek-reservation-qa.herokuapp.com/sign-in");
+        driver.findElement(By.name("email")).sendKeys(email);
+        driver.findElement(By.name("password")).sendKeys(password + Keys.ENTER);
+        Thread.sleep(5000);
+        assertThat(driver.getCurrentUrl(), endsWith("map"));
+
 
     }
 
