@@ -1,4 +1,4 @@
-package com.app.tests;
+package com.app.utlities;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

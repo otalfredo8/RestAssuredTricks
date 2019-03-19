@@ -1,5 +1,6 @@
 package com.app.tests;
 
+import com.app.utlities.BookITRestUtility;
 import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.Logger;
