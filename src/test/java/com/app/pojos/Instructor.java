@@ -1,12 +1,16 @@
 package com.app.pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Instructor {
 
     private String firstName;
     private String lastName;
     private String subject;
     private int batch;
-    private int id;
+//    private int id;
 
     @Override
     public String toString() {
@@ -15,7 +19,7 @@ public class Instructor {
                 ", lastName='" + lastName + '\'' +
                 ", subject='" + subject + '\'' +
                 ", batch=" + batch +
-                ", id=" + id +
+//                ", id=" + id +
                 '}';
     }
 
@@ -51,11 +55,11 @@ public class Instructor {
         this.batch = batch;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public void setId(int id) {
+//        this.id = id;
+//    }
 }
