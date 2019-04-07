@@ -35,7 +35,7 @@ public class JsonPayloadExample {
         // contentType()  --> used to indicate what kind of payload awe are sending
         // ContentType.JSON  ---> the actual type
         // body of the request
-        Response postResponse = given().
+        Response postResponse = given().log().all().
                 contentType(ContentType.JSON).
                 body(instructor).
                 when().post("instructor/create");

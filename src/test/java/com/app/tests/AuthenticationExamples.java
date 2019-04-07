@@ -1,6 +1,7 @@
 package com.app.tests;
 
 import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import org.junit.Test;
 
 public class AuthenticationExamples {
@@ -9,7 +10,7 @@ public class AuthenticationExamples {
     public void usingApiKey(){
         RestAssured.given().log().all().
                 queryParam("t", "Kung Fury").
-//                queryParam("apikey", "a9faab96").
+                queryParam("apikey", "a9faab96").
                 when().get("http://www.omdbapi.com/").
                 then().log().all().assertThat().statusCode(200);
     }
@@ -49,10 +50,11 @@ public class AuthenticationExamples {
     public void basicPreemptiveAuthentication(){
         // auth --> provides different types of authentication
         // based --> authentication using username and password
-        RestAssured.given().
+        Response response = RestAssured.given().
                 auth().preemptive().basic("admin", "admin").
-                when().get("https://the-internet.herokuapp.com/basic_auth").
-                then().assertThat().statusCode(200);
+                when().get("https://the-internet.herokuapp.com/basic_auth")
+                ;
+        response.then().log().all().and().assertThat().statusCode(200);
         //
     }
 

@@ -1,9 +1,11 @@
 package com.app.pojos;
 
+//import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-
-@JsonIgnoreProperties(ignoreUnknown = true)
+//@JsonIgnoreProperties(ignoreUnknown = true)
 public class Instructor {
 
     private String firstName;
@@ -58,7 +60,7 @@ public class Instructor {
 //    public int getId() {
 //        return id;
 //    }
-//
+
 //    public void setId(int id) {
 //        this.id = id;
 //    }

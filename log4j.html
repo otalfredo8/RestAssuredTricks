@@ -1,0 +1,446 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HTML Layout Example</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Mar 17 11:52:36 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.app.tests.LoggingExample category">com.app.tests.LoggingExample</td>
+<td title="Message">this is the before method</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.app.tests.LoggingExample category">com.app.tests.LoggingExample</td>
+<td title="Message">this is the test method: INFO</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.app.tests.LoggingExample category">com.app.tests.LoggingExample</td>
+<td title="Message">this is the test method: WARN</td>
+</tr>
+
+<tr>
+<td>1514</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.impl.conn.BasicClientConnectionManager category">org.apache.http.impl.conn.BasicClientConnectionManager</td>
+<td title="Message">Get connection for route {s}-&gt;https://uinames.com:443</td>
+</tr>
+
+<tr>
+<td>1529</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.impl.conn.DefaultClientConnectionOperator category">org.apache.http.impl.conn.DefaultClientConnectionOperator</td>
+<td title="Message">Connecting to uinames.com:443</td>
+</tr>
+
+<tr>
+<td>1983</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.client.protocol.RequestAddCookies category">org.apache.http.client.protocol.RequestAddCookies</td>
+<td title="Message">CookieSpec selected: ignoreCookies</td>
+</tr>
+
+<tr>
+<td>1985</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.client.protocol.RequestAuthCache category">org.apache.http.client.protocol.RequestAuthCache</td>
+<td title="Message">Auth cache not set in the context</td>
+</tr>
+
+<tr>
+<td>1985</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.client.protocol.RequestTargetAuthentication category">org.apache.http.client.protocol.RequestTargetAuthentication</td>
+<td title="Message">Target auth state: UNCHALLENGED</td>
+</tr>
+
+<tr>
+<td>1986</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.client.protocol.RequestProxyAuthentication category">org.apache.http.client.protocol.RequestProxyAuthentication</td>
+<td title="Message">Proxy auth state: UNCHALLENGED</td>
+</tr>
+
+<tr>
+<td>1986</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.impl.client.DefaultHttpClient category">org.apache.http.impl.client.DefaultHttpClient</td>
+<td title="Message">Attempt 1 to execute request</td>
+</tr>
+
+<tr>
+<td>1987</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.impl.conn.DefaultClientConnection category">org.apache.http.impl.conn.DefaultClientConnection</td>
+<td title="Message">Sending request: GET /api/ HTTP/1.1</td>
+</tr>
+
+<tr>
+<td>1987</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &gt;&gt; &quot;GET /api/ HTTP/1.1[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>1988</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &gt;&gt; &quot;Accept: */*[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>1989</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &gt;&gt; &quot;Host: uinames.com[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>1989</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>1989</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>1990</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>1991</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &gt;&gt; &quot;[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>1991</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.headers category">org.apache.http.headers</td>
+<td title="Message">&gt;&gt; GET /api/ HTTP/1.1</td>
+</tr>
+
+<tr>
+<td>1991</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.headers category">org.apache.http.headers</td>
+<td title="Message">&gt;&gt; Accept: */*</td>
+</tr>
+
+<tr>
+<td>1992</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.headers category">org.apache.http.headers</td>
+<td title="Message">&gt;&gt; Host: uinames.com</td>
+</tr>
+
+<tr>
+<td>1992</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.headers category">org.apache.http.headers</td>
+<td title="Message">&gt;&gt; Connection: Keep-Alive</td>
+</tr>
+
+<tr>
+<td>1992</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.headers category">org.apache.http.headers</td>
+<td title="Message">&gt;&gt; User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)</td>
+</tr>
+
+<tr>
+<td>1992</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.headers category">org.apache.http.headers</td>
+<td title="Message">&gt;&gt; Accept-Encoding: gzip,deflate</td>
+</tr>
+
+<tr>
+<td>2098</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>2100</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &lt;&lt; &quot;Date: Sun, 17 Mar 2019 15:52:39 GMT[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>2100</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &lt;&lt; &quot;Server: Apache[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>2100</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &lt;&lt; &quot;X-Powered-By: PHP/5.4.45[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>2101</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &lt;&lt; &quot;Access-Control-Allow-Origin: *[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>2101</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &lt;&lt; &quot;Access-Control-Allow-Methods: GET[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>2101</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>2102</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>2102</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.wire category">org.apache.http.wire</td>
+<td title="Message"> &lt;&lt; &quot;[\r][\n]&quot;</td>
+</tr>
+
+<tr>
+<td>2103</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.impl.conn.DefaultClientConnection category">org.apache.http.impl.conn.DefaultClientConnection</td>
+<td title="Message">Receiving response: HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>2103</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.headers category">org.apache.http.headers</td>
+<td title="Message">&lt;&lt; HTTP/1.1 200 OK</td>
+</tr>
+
+<tr>
+<td>2104</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.headers category">org.apache.http.headers</td>
+<td title="Message">&lt;&lt; Date: Sun, 17 Mar 2019 15:52:39 GMT</td>
+</tr>
+
+<tr>
+<td>2104</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.headers category">org.apache.http.headers</td>
+<td title="Message">&lt;&lt; Server: Apache</td>
+</tr>
+
+<tr>
+<td>2104</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.headers category">org.apache.http.headers</td>
+<td title="Message">&lt;&lt; X-Powered-By: PHP/5.4.45</td>
+</tr>
+
+<tr>
+<td>2104</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.headers category">org.apache.http.headers</td>
+<td title="Message">&lt;&lt; Access-Control-Allow-Origin: *</td>
+</tr>
+
+<tr>
+<td>2105</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.headers category">org.apache.http.headers</td>
+<td title="Message">&lt;&lt; Access-Control-Allow-Methods: GET</td>
+</tr>
+
+<tr>
+<td>2106</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.headers category">org.apache.http.headers</td>
+<td title="Message">&lt;&lt; Transfer-Encoding: chunked</td>
+</tr>
+
+<tr>
+<td>2106</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.headers category">org.apache.http.headers</td>
+<td title="Message">&lt;&lt; Content-Type: application/json; charset=utf-8</td>
+</tr>
+
+<tr>
+<td>2111</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="org.apache.http.impl.client.DefaultHttpClient category">org.apache.http.impl.client.DefaultHttpClient</td>
+<td title="Message">Connection can be kept alive indefinitely</td>
+</tr>
+
+<tr>
+<td>2124</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder category">io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder</td>
+<td title="Message">Parsing response as: application/json; charset=utf-8</td>
+</tr>
+
+<tr>
+<td>2124</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder category">io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder</td>
+<td title="Message">Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream</td>
+</tr>
+
+<tr>
+<td>2138</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.app.tests.LoggingExample category">com.app.tests.LoggingExample</td>
+<td title="Message">this is the after method</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>HTML Layout Example</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sun Mar 17 11:53:12 EDT 2019<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.app.tests.LoggingExample category">com.app.tests.LoggingExample</td>
+<td title="Message">this is the before method</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.app.tests.LoggingExample category">com.app.tests.LoggingExample</td>
+<td title="Message">this is the test method: INFO</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>WARN</strong></font></td>
+<td title="com.app.tests.LoggingExample category">com.app.tests.LoggingExample</td>
+<td title="Message">this is the test method: WARN</td>
+</tr>
+
+<tr>
+<td>2016</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.app.tests.LoggingExample category">com.app.tests.LoggingExample</td>
+<td title="Message">this is the after method</td>
+</tr>
