@@ -30,4 +30,8 @@ public class WarmUpEx {
         Assert.assertTrue(response.asString().contains("Rains of Castamere"));
     }
 
+    public static void main(String[] args) {
+
+    }
+
 }

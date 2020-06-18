@@ -68,9 +68,4 @@ public class APIReview {
         assertEquals(11, responseMap.get("batch"));
         assertEquals("Intro to Java programming", responseMap.get("subject"));
     }
-
-
-
-
-
 }

@@ -1,0 +1,13 @@
+{
+  "user": {
+    "title": "Mr",
+    "first": "Ali",
+    "last": "Vera",
+    "address": {
+      "street": "300 K SW",
+      "city": "Washington",
+      "state": "DC",
+      "zip": "20003"
+    }
+  }
+}

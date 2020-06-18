@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Mrs",
+        "first": "Sarah",
+        "last": "Renaud"
+      },
+      "location": {
+        "street": {
+          "number": 2868,
+          "name": "Rue André-Gide"
+        },
+        "city": "Boulogne-Billancourt",
+        "state": "Val-D'Oise",
+        "country": "France",
+        "postcode": 79584,
+        "coordinates": {
+          "latitude": "4.5841",
+          "longitude": "73.4364"
+        },
+        "timezone": {
+          "offset": "0:00",
+          "description": "Western Europe Time, London, Lisbon, Casablanca"
+        }
+      },
+      "email": "sarah.renaud@example.com",
+      "login": {
+        "uuid": "ed97452e-c081-4a68-9d1f-19d9c0481ba0",
+        "username": "yellowbird616",
+        "password": "aptiva",
+        "salt": "aGhNyGK1",
+        "md5": "5d391773cb14b86ad8439725f70992ad",
+        "sha1": "43d233d9d098da79e5d5e10931d0205655fc7637",
+        "sha256": "847ae3c5b8fb3b2d7a8819b7d0a0f568330432e011784ec7e622616c6e53ba54"
+      },
+      "dob": {
+        "date": "1989-12-05T05:06:14.673Z",
+        "age": 31
+      },
+      "registered": {
+        "date": "2012-02-25T00:28:55.263Z",
+        "age": 8
+      },
+      "phone": "01-25-06-60-20",
+      "cell": "06-70-21-80-19",
+      "id": {
+        "name": "INSEE",
+        "value": "2NNaN22905127 06"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/74.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/74.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/74.jpg"
+      },
+      "nat": "FR"
+    }
+  ],
+  "info": {
+    "seed": "9f63a967054552e8",
+    "results": 1,
+    "page": 1,
+    "version": "1.3"
+  }
+}
